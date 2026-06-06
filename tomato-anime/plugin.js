@@ -134,6 +134,16 @@
         const epList = epData.OTAKU_V2_01 || epData.data || epData.episodes || epData || [];
         const arrayList = Array.isArray(epList) ? epList : [];
 
+        if (arrayList.length > 0) {
+          const sampleEp = arrayList[0];
+          // Try to enrich the main item with details from the episode
+          item.title = sampleEp.category_name || "Lista de Episódios";
+          item.posterUrl = sampleEp.video_thumbnail_b || sampleEp.category_image || "";
+        }
+
+        // Reverse the array so episodes are listed in ascending order
+        arrayList.reverse();
+
         for (const ep of arrayList) {
           const rawEp = ep.number || ep.episode || ep.ep_number || 0;
           const numEp = parseInt(rawEp);
@@ -144,6 +154,7 @@
               url: `${ep.rel_vid || ep.id || ep.ep_id || ep.video_id}`,
               season: 1,
               episode: isNaN(numEp) ? 0 : numEp,
+              description: ep.video_description || undefined,
               dubStatus: (ep.video_ep && ep.video_ep.includes("DUB")) ? "dubbed" : "subbed",
             })
           );
