@@ -1,0 +1,14 @@
+[
+  {
+    "packageName": "com.tomato.animeplugin",
+    "name": "Tomato Anime",
+    "version": "1.0.0",
+    "author": "mgser",
+    "description": "Anime streaming via Tomato Anime Proxy — feed, search, details & HLS streams.",
+    "baseUrl": "http://167.234.240.167:3000",
+    "type": "anime",
+    "language": "pt-BR",
+    "icon": "https://raw.githubusercontent.com/mgser/tomato-plugin/main/icon.png",
+    "url": "https://raw.githubusercontent.com/pacdt/tomato-plugin/main/dist/com.tomato.animeplugin.sky"
+  }
+]
