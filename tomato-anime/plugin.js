@@ -38,22 +38,19 @@
     }
   }
 
-  /**
-   * Build a MultimediaItem from the various shapes returned by the proxy.
-   */
   function toItem(anime) {
     // Collect the necessary IDs to construct the load URL.
-    const ids = [anime.temp_id, anime.current_id, anime.cat_id, anime.id, anime.anime_id].map(x => x || "").join("|");
+    const ids = [anime.temp_id, anime.latest_temp_tid, anime.cat_id, anime.cid, anime.id, anime.latest_video_id, anime.anime_id].map(x => x || "").join("|");
     
     return new MultimediaItem({
-      title: anime.title || anime.name || anime.anime_name || "Sem título",
+      title: anime.category_name || anime.video_title || anime.title || anime.name || anime.anime_name || "Sem título",
       url: ids,
-      posterUrl: anime.cover_url || anime.poster_url || anime.image || anime.thumbnail || anime.anime_cover_url || "",
+      posterUrl: anime.video_thumbnail_b || anime.category_image || anime.cover_url || anime.poster_url || anime.image || anime.thumbnail || anime.anime_cover_url || "",
       type: "anime",
-      year: anime.year || anime.date || anime.anime_date || undefined,
+      year: anime.ano_temp || anime.ano || anime.year || anime.date || anime.anime_date || undefined,
       score: anime.score || anime.rating || undefined,
-      status: anime.status || undefined,
-      description: anime.synopsis || anime.description || anime.anime_description || undefined,
+      status: anime.status_temp === "Concluído" || anime.status_lanc === "Concluído" ? "completed" : (anime.status || undefined),
+      description: anime.video_description || anime.sinopse || anime.synopsis || anime.description || anime.anime_description || undefined,
     });
   }
 
@@ -105,16 +102,15 @@
 
   async function load(url, cb) {
     try {
-      // url is expected to contain "temp_id|current_id|cat_id|id|anime_id"
+      // url is expected to contain "temp_id|latest_temp_tid|cat_id|cid|id|latest_video_id|anime_id"
       const parts = url.split("|");
-      let temp_id = parts[0];
-      let current_id = parts[1];
-      let cat_id = parts[2];
-      const fallback_id = parts[3] || parts[4] || temp_id;
+      let temp_id = parts[0] || parts[1];
+      let cat_id = parts[2] || parts[3];
+      const fallback_id = parts[4] || parts[5] || parts[6] || temp_id || cat_id;
       
       if (!temp_id) temp_id = fallback_id;
-      if (!current_id) current_id = fallback_id;
       if (!cat_id) cat_id = fallback_id;
+      let current_id = cat_id;
 
       // Without a specific "details" endpoint, we return a generic item wrapper
       // and append the episodes list to it.
@@ -134,11 +130,11 @@
         for (const ep of arrayList) {
           episodes.push(
             new Episode({
-              name: ep.title || ep.ep_name || ep.name || `Episódio ${ep.number || ep.episode || ep.ep_number || "?"}`,
-              url: `${ep.id || ep.ep_id || ep.video_id}`,
+              name: ep.video_title || ep.video_ep || ep.title || ep.ep_name || ep.name || `Episódio ${ep.number || ep.episode || ep.ep_number || "?"}`,
+              url: `${ep.rel_vid || ep.id || ep.ep_id || ep.video_id}`,
               season: 1,
               episode: ep.number || ep.episode || ep.ep_number || 0,
-              dubStatus: "subbed",
+              dubStatus: (ep.video_ep && ep.video_ep.includes("DUB")) ? "dubbed" : "subbed",
             })
           );
         }
