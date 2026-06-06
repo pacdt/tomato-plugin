@@ -1,11 +1,11 @@
 {
-  "packageName": "com.tomato.animeplugin",
-  "name": "Tomato Anime",
+  "packageName": "com.otakutv.animeplugin",
+  "name": "OtakuTV Anime",
   "version": 1,
   "author": "mgser",
-  "description": "Anime streaming via Tomato Anime Proxy — feed, search, details & HLS streams.",
+  "description": "Anime streaming via OtakuTV Proxy API — feed, search, details & HLS streams.",
   "baseUrl": "http://167.234.240.167:3000",
   "type": "anime",
   "language": "pt",
-  "icon": "https://raw.githubusercontent.com/mgser/tomato-plugin/main/icon.png"
+  "icon": "https://raw.githubusercontent.com/pacdt/tomato-plugin/main/icon.png"
 }

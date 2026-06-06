@@ -1,7 +1,7 @@
 {
-  "name": "Tomato Anime",
-  "packageName": "com.tomato.repo",
-  "description": "Tomato Anime plugins for SkyStream",
+  "name": "OtakuTV Anime",
+  "packageName": "com.otakutv.repo",
+  "description": "OtakuTV Anime plugins for SkyStream",
   "manifestVersion": 1,
   "pluginLists": [
     "https://raw.githubusercontent.com/pacdt/tomato-plugin/main/dist/plugins.json"
