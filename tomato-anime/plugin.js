@@ -42,13 +42,20 @@
     // Collect the necessary IDs to construct the load URL.
     const ids = [anime.temp_id, anime.latest_temp_tid, anime.cat_id, anime.cid, anime.id, anime.latest_video_id, anime.anime_id].map(x => x || "").join("|");
     
+    // Convert year and score to numbers to satisfy SkyStream Dart typing
+    const rawYear = anime.ano_temp || anime.ano || anime.year || anime.date || anime.anime_date;
+    const numYear = parseInt(rawYear);
+    
+    const rawScore = anime.score || anime.rating;
+    const numScore = parseFloat(rawScore);
+
     return new MultimediaItem({
       title: anime.category_name || anime.video_title || anime.title || anime.name || anime.anime_name || "Sem título",
       url: ids,
       posterUrl: anime.video_thumbnail_b || anime.category_image || anime.cover_url || anime.poster_url || anime.image || anime.thumbnail || anime.anime_cover_url || "",
       type: "anime",
-      year: anime.ano_temp || anime.ano || anime.year || anime.date || anime.anime_date || undefined,
-      score: anime.score || anime.rating || undefined,
+      year: isNaN(numYear) ? undefined : numYear,
+      score: isNaN(numScore) ? undefined : numScore,
       status: anime.status_temp === "Concluído" || anime.status_lanc === "Concluído" ? "completed" : (anime.status || undefined),
       description: anime.video_description || anime.sinopse || anime.synopsis || anime.description || anime.anime_description || undefined,
     });
@@ -128,12 +135,15 @@
         const arrayList = Array.isArray(epList) ? epList : [];
 
         for (const ep of arrayList) {
+          const rawEp = ep.number || ep.episode || ep.ep_number || 0;
+          const numEp = parseInt(rawEp);
+          
           episodes.push(
             new Episode({
-              name: ep.video_title || ep.video_ep || ep.title || ep.ep_name || ep.name || `Episódio ${ep.number || ep.episode || ep.ep_number || "?"}`,
+              name: ep.video_title || ep.video_ep || ep.title || ep.ep_name || ep.name || `Episódio ${rawEp || "?"}`,
               url: `${ep.rel_vid || ep.id || ep.ep_id || ep.video_id}`,
               season: 1,
-              episode: ep.number || ep.episode || ep.ep_number || 0,
+              episode: isNaN(numEp) ? 0 : numEp,
               dubStatus: (ep.video_ep && ep.video_ep.includes("DUB")) ? "dubbed" : "subbed",
             })
           );
