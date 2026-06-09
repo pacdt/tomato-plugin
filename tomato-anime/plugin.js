@@ -206,28 +206,51 @@
       try {
         let seasonsToFetch = [];
         let seasonMeta = {}; // maps temp_id to { seasonNum, dubStatus }
+        let fetchedDetails = false;
 
         if (latest_video_id) {
           try {
             const singleRes = await apiGet(`/single-video/${latest_video_id}`);
             const data = singleRes.OTAKU_V2_01 || singleRes.data || singleRes || [];
-            if (Array.isArray(data) && data.length > 0 && data[0].temp && Array.isArray(data[0].temp)) {
-              for (const t of data[0].temp) {
-                seasonsToFetch.push(t.temp_id);
-                
-                // Parse season and dubStatus from temp_name
-                // e.g., "Temporada 04 | Dublado"
-                let sNum = 1;
-                let dStat = "subbed";
-                if (t.temp_name) {
-                  const sMatch = t.temp_name.match(/Temporada\s*(\d+)/i);
-                  if (sMatch) sNum = parseInt(sMatch[1], 10);
-                  
-                  if (t.temp_name.toLowerCase().includes("dublado")) dStat = "dubbed";
-                  else if (t.temp_name.toLowerCase().includes("legendado")) dStat = "subbed";
+            if (Array.isArray(data) && data.length > 0) {
+              const singleInfo = data[0];
+
+              if (singleInfo.category_name && !fetchedDetails) {
+                try {
+                  const searchRes = await apiGet(`/search?keyword=${encodeURIComponent(singleInfo.category_name)}`);
+                  const searchItems = searchRes.OTAKU_V2_01 || searchRes.data || [];
+                  const match = searchItems.find(x => String(x.cid) === String(cat_id) || x.category_name === singleInfo.category_name);
+                  if (match) {
+                     item.title = match.category_name || singleInfo.category_name;
+                     item.description = match.sinopse || match.synopsis || match.description || undefined;
+                     item.year = match.ano ? parseInt(match.ano) : undefined;
+                     item.status = match.status_lanc === "Concluído" ? "completed" : undefined;
+                     item.posterUrl = cleanImageUrl(match.category_image || match.cover_url || singleInfo.category_image || "");
+                     fetchedDetails = true;
+                  }
+                } catch(e) {
+                  console.warn("[OtakuTV] Failed to fetch details from search in load", e);
                 }
-                
-                seasonMeta[t.temp_id] = { season: sNum, dubStatus: dStat };
+              }
+
+              if (singleInfo.temp && Array.isArray(singleInfo.temp)) {
+                for (const t of singleInfo.temp) {
+                  seasonsToFetch.push(t.temp_id);
+                  
+                  // Parse season and dubStatus from temp_name
+                  // e.g., "Temporada 04 | Dublado"
+                  let sNum = 1;
+                  let dStat = "subbed";
+                  if (t.temp_name) {
+                    const sMatch = t.temp_name.match(/Temporada\s*(\d+)/i);
+                    if (sMatch) sNum = parseInt(sMatch[1], 10);
+                    
+                    if (t.temp_name.toLowerCase().includes("dublado")) dStat = "dubbed";
+                    else if (t.temp_name.toLowerCase().includes("legendado")) dStat = "subbed";
+                  }
+                  
+                  seasonMeta[t.temp_id] = { season: sNum, dubStatus: dStat };
+                }
               }
             }
           } catch (e) {
@@ -250,7 +273,7 @@
 
         const seasonResults = await Promise.all(seasonPromises);
 
-        let gotItemDetails = false;
+        let gotItemDetails = fetchedDetails;
 
         for (const { tid, data } of seasonResults) {
           const epList = data.OTAKU_V2_01 || data.data || data.episodes || data || [];
@@ -260,6 +283,22 @@
             const sampleEp = arrayList[0];
             item.title = sampleEp.category_name || "Lista de Episódios";
             item.posterUrl = cleanImageUrl(sampleEp.video_thumbnail_b || sampleEp.category_image || "");
+            
+            // Try to fetch details now if we didn't before
+            if (sampleEp.category_name) {
+              try {
+                const searchRes = await apiGet(`/search?keyword=${encodeURIComponent(sampleEp.category_name)}`);
+                const searchItems = searchRes.OTAKU_V2_01 || searchRes.data || [];
+                const match = searchItems.find(x => String(x.cid) === String(cat_id) || x.category_name === sampleEp.category_name);
+                if (match) {
+                   item.title = match.category_name || sampleEp.category_name;
+                   item.description = match.sinopse || match.synopsis || match.description || undefined;
+                   item.year = match.ano ? parseInt(match.ano) : undefined;
+                   item.status = match.status_lanc === "Concluído" ? "completed" : undefined;
+                   item.posterUrl = cleanImageUrl(match.category_image || match.cover_url || sampleEp.category_image || "");
+                }
+              } catch(e) {}
+            }
             gotItemDetails = true;
           }
 
