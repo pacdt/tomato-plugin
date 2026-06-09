@@ -187,7 +187,9 @@
       let temp_id = parts[0] || parts[1];
       let cat_id = parts[2] || parts[3];
       const fallback_id = parts[4] || parts[5] || parts[6] || temp_id || cat_id;
-      let latest_video_id = parts[5];
+      
+      // Prioritize video IDs over temp/cat IDs to get full anime details
+      let video_id_to_fetch = parts[5] || parts[4] || parts[6];
       
       if (!temp_id) temp_id = fallback_id;
       if (!cat_id) cat_id = fallback_id;
@@ -208,12 +210,18 @@
         let seasonMeta = {}; // maps temp_id to { seasonNum, dubStatus }
         let fetchedDetails = false;
 
-        if (latest_video_id) {
+        if (video_id_to_fetch) {
           try {
-            const singleRes = await apiGet(`/single-video/${latest_video_id}`);
+            const singleRes = await apiGet(`/single-video/${video_id_to_fetch}`);
             const data = singleRes.OTAKU_V2_01 || singleRes.data || singleRes || [];
             if (Array.isArray(data) && data.length > 0) {
               const singleInfo = data[0];
+
+              // Automatically correct cat_id if the API provides it
+              if (singleInfo.cat_id) {
+                cat_id = singleInfo.cat_id;
+                current_id = cat_id;
+              }
 
               if (singleInfo.category_name && !fetchedDetails) {
                 try {
@@ -238,7 +246,6 @@
                   seasonsToFetch.push(t.temp_id);
                   
                   // Parse season and dubStatus from temp_name
-                  // e.g., "Temporada 04 | Dublado"
                   let sNum = 1;
                   let dStat = "subbed";
                   if (t.temp_name) {
