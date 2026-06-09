@@ -63,23 +63,87 @@
 
   // ─── 1. getHome — Dashboard feed ─────────────────────────────
 
+  const GENEROS = [
+    "Ação", "Aventura", "Comédia", "Drama", "Ecchi", "Esportes",
+    "Fantasia", "Mecha", "Mistério", "Música", "Romance", "Sci-Fi",
+    "Shoujo", "Shounen", "Slice of Life", "Sobrenatural"
+  ];
+
   async function getHome(cb) {
     try {
-      const [latestRes, popularRes] = await Promise.all([
-        apiGet("/latest-videos").catch(() => ({})),
-        apiGet("/most-viewed").catch(() => ({}))
-      ]);
-
       const data = {};
 
-      const latest = latestRes.OTAKU_V2_01 || latestRes.data || latestRes;
-      if (Array.isArray(latest) && latest.length > 0) {
-        data["Últimos Lançamentos"] = latest.map(toItem);
+      // 1. Fetch main strips, calendar, and random anime in parallel
+      const [stripsRes, calRes, randRes] = await Promise.all([
+        apiGet("/home-strips").catch(() => ({})),
+        apiGet("/calendar-releases").catch(() => ({})),
+        apiGet("/random-anime").catch(() => ({}))
+      ]);
+
+      // Process Home Strips
+      const baseStrips = stripsRes.OTAKU_V2_01 || stripsRes.PLAY_V2_02 || stripsRes.data || stripsRes;
+      const strips = baseStrips.strips || [];
+      for (const strip of strips) {
+        if (!strip.items || !Array.isArray(strip.items) || strip.items.length === 0) continue;
+
+        let cat = strip.id || strip.title || "Outros";
+        if (cat === "slider_hero" || strip.type === "slider") {
+          cat = "Trending";
+        } else if (cat === "latest_animes") {
+          cat = "Últimos Lançamentos";
+        } else {
+          cat = cat.charAt(0).toUpperCase() + cat.slice(1).replace(/_/g, " ");
+        }
+
+        data[cat] = strip.items.map(toItem);
       }
 
-      const popular = popularRes.OTAKU_V2_01 || popularRes.data || popularRes;
-      if (Array.isArray(popular) && popular.length > 0) {
-        data["Mais Visualizados"] = popular.map(toItem);
+      // Process Random Anime
+      const randItems = randRes.OTAKU_V2_01 || randRes.data || randRes;
+      if (Array.isArray(randItems) && randItems.length > 0) {
+        data["Recomendação Aleatória"] = randItems.map(toItem);
+      }
+
+      // Process Calendar Releases
+      const calItems = calRes.OTAKU_V2_01 || calRes.data || calRes;
+      if (Array.isArray(calItems) && calItems.length > 0) {
+        data["Calendário de Lançamentos"] = calItems.map(toItem);
+      }
+
+      // 2. Fetch all genres to append as individual strips
+      const genrePromises = GENEROS.map(g =>
+        apiGet(`/home-strips?type=anime&generos=${encodeURIComponent(g)}`)
+          .then(res => ({ genre: g, res }))
+          .catch(() => ({ genre: g, res: {} }))
+      );
+
+      const genreResults = await Promise.all(genrePromises);
+
+      for (const { genre, res } of genreResults) {
+        const d = res.OTAKU_V2_01 || res.PLAY_V2_02 || res.data || res;
+        const gStrips = d.strips || [];
+        
+        let items = [];
+        for (const s of gStrips) {
+          if (s.items && Array.isArray(s.items)) {
+            items = items.concat(s.items);
+          }
+        }
+
+        // Deduplicate items
+        const uniqueItems = [];
+        const seen = new Set();
+        for (const item of items) {
+          const id = item.cid || item.id || item.video_title;
+          if (!seen.has(id)) {
+            seen.add(id);
+            uniqueItems.push(item);
+          }
+        }
+
+        if (uniqueItems.length > 0) {
+          data[`Gênero: ${genre}`] = uniqueItems.map(toItem);
+        }
       }
 
       cb({ success: true, data });
