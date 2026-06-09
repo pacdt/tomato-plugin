@@ -134,8 +134,11 @@
         
         let items = [];
         for (const s of gStrips) {
-          if (s.items && Array.isArray(s.items)) {
-            items = items.concat(s.items);
+          // Ignore the global strips returned with the genre payload
+          if (s.id !== "latest_animes" && s.id !== "popular_weekly") {
+            if (s.items && Array.isArray(s.items)) {
+              items = items.concat(s.items);
+            }
           }
         }
 
