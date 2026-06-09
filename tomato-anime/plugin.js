@@ -38,6 +38,15 @@
     }
   }
 
+  function cleanImageUrl(url) {
+    if (!url || typeof url !== "string") return "";
+    const idx = url.lastIndexOf("http");
+    if (idx > 0) {
+      return url.substring(idx);
+    }
+    return url;
+  }
+
   function toItem(anime) {
     // Collect the necessary IDs to construct the load URL.
     const ids = [anime.temp_id, anime.latest_temp_tid, anime.cat_id, anime.cid, anime.id, anime.latest_video_id, anime.anime_id].map(x => x || "").join("|");
@@ -52,7 +61,7 @@
     return new MultimediaItem({
       title: anime.category_name || anime.video_title || anime.title || anime.name || anime.anime_name || "Sem título",
       url: ids,
-      posterUrl: anime.video_thumbnail_b || anime.category_image || anime.cover_url || anime.poster_url || anime.image || anime.thumbnail || anime.anime_cover_url || "",
+      posterUrl: cleanImageUrl(anime.video_thumbnail_b || anime.category_image || anime.cover_url || anime.poster_url || anime.image || anime.thumbnail || anime.anime_cover_url || ""),
       type: "anime",
       year: isNaN(numYear) ? undefined : numYear,
       score: isNaN(numScore) ? undefined : numScore,
@@ -178,6 +187,7 @@
       let temp_id = parts[0] || parts[1];
       let cat_id = parts[2] || parts[3];
       const fallback_id = parts[4] || parts[5] || parts[6] || temp_id || cat_id;
+      let latest_video_id = parts[5];
       
       if (!temp_id) temp_id = fallback_id;
       if (!cat_id) cat_id = fallback_id;
@@ -194,34 +204,96 @@
       const episodes = [];
 
       try {
-        const epData = await apiGet(`/video-temp?temp_id=${temp_id}&current_id=${current_id}&cat_id=${cat_id}`);
-        const epList = epData.OTAKU_V2_01 || epData.data || epData.episodes || epData || [];
-        const arrayList = Array.isArray(epList) ? epList : [];
+        let seasonsToFetch = [];
+        let seasonMeta = {}; // maps temp_id to { seasonNum, dubStatus }
 
-        if (arrayList.length > 0) {
-          const sampleEp = arrayList[0];
-          // Try to enrich the main item with details from the episode
-          item.title = sampleEp.category_name || "Lista de Episódios";
-          item.posterUrl = sampleEp.video_thumbnail_b || sampleEp.category_image || "";
+        if (latest_video_id) {
+          try {
+            const singleRes = await apiGet(`/single-video/${latest_video_id}`);
+            const data = singleRes.OTAKU_V2_01 || singleRes.data || singleRes || [];
+            if (Array.isArray(data) && data.length > 0 && data[0].temp && Array.isArray(data[0].temp)) {
+              for (const t of data[0].temp) {
+                seasonsToFetch.push(t.temp_id);
+                
+                // Parse season and dubStatus from temp_name
+                // e.g., "Temporada 04 | Dublado"
+                let sNum = 1;
+                let dStat = "subbed";
+                if (t.temp_name) {
+                  const sMatch = t.temp_name.match(/Temporada\s*(\d+)/i);
+                  if (sMatch) sNum = parseInt(sMatch[1], 10);
+                  
+                  if (t.temp_name.toLowerCase().includes("dublado")) dStat = "dubbed";
+                  else if (t.temp_name.toLowerCase().includes("legendado")) dStat = "subbed";
+                }
+                
+                seasonMeta[t.temp_id] = { season: sNum, dubStatus: dStat };
+              }
+            }
+          } catch (e) {
+            console.warn("[OtakuTV] Failed to fetch single-video for seasons fallback", e);
+          }
         }
 
-        // Reverse the array so episodes are listed in ascending order
-        arrayList.reverse();
+        // If single-video failed or returned no seasons, fallback to the current temp_id
+        if (seasonsToFetch.length === 0 && temp_id) {
+          seasonsToFetch = [temp_id];
+          seasonMeta[temp_id] = { season: 1, dubStatus: "subbed" };
+        }
 
-        for (const ep of arrayList) {
-          const rawEp = ep.number || ep.episode || ep.ep_number || 0;
-          const numEp = parseInt(rawEp);
-          
-          episodes.push(
-            new Episode({
-              name: ep.video_title || ep.video_ep || ep.title || ep.ep_name || ep.name || `Episódio ${rawEp || "?"}`,
-              url: `${ep.rel_vid || ep.id || ep.ep_id || ep.video_id}`,
-              season: 1,
-              episode: isNaN(numEp) ? 0 : numEp,
-              description: ep.video_description || undefined,
-              dubStatus: (ep.video_ep && ep.video_ep.includes("DUB")) ? "dubbed" : "subbed",
-            })
-          );
+        // Fetch all seasons in parallel
+        const seasonPromises = seasonsToFetch.map(tid => 
+          apiGet(`/video-temp?temp_id=${tid}&current_id=${current_id}&cat_id=${cat_id}`)
+            .then(res => ({ tid, data: res }))
+            .catch(() => ({ tid, data: [] }))
+        );
+
+        const seasonResults = await Promise.all(seasonPromises);
+
+        let gotItemDetails = false;
+
+        for (const { tid, data } of seasonResults) {
+          const epList = data.OTAKU_V2_01 || data.data || data.episodes || data || [];
+          const arrayList = Array.isArray(epList) ? epList : [];
+
+          if (arrayList.length > 0 && !gotItemDetails) {
+            const sampleEp = arrayList[0];
+            item.title = sampleEp.category_name || "Lista de Episódios";
+            item.posterUrl = cleanImageUrl(sampleEp.video_thumbnail_b || sampleEp.category_image || "");
+            gotItemDetails = true;
+          }
+
+          const meta = seasonMeta[tid] || { season: 1, dubStatus: "subbed" };
+
+          // Reverse the array so episodes are listed in ascending order per season
+          arrayList.reverse();
+
+          for (const ep of arrayList) {
+            const rawEp = ep.number || ep.episode || ep.ep_number || 0;
+            let numEp = parseInt(rawEp);
+
+            if (isNaN(numEp) || numEp === 0) {
+               const epMatch = (ep.video_ep || ep.video_title || "").match(/EP\.?\s*(\d+)/i);
+               if (epMatch) numEp = parseInt(epMatch[1], 10);
+            }
+
+            let finalDubStatus = meta.dubStatus;
+            if (ep.video_ep && ep.video_ep.includes("DUB")) finalDubStatus = "dubbed";
+            else if (ep.video_ep && ep.video_ep.includes("LEG")) finalDubStatus = "subbed";
+
+            episodes.push(
+              new Episode({
+                name: ep.video_title || ep.video_ep || ep.title || ep.ep_name || ep.name || `Episódio ${numEp || "?"}`,
+                url: `${ep.rel_vid || ep.id || ep.ep_id || ep.video_id}`,
+                season: meta.season,
+                episode: isNaN(numEp) ? 0 : numEp,
+                description: ep.video_description || undefined,
+                dubStatus: finalDubStatus,
+                thumbnail: cleanImageUrl(ep.video_thumbnail_b || ep.category_image || ep.image || ep.thumbnail || ""),
+                posterUrl: cleanImageUrl(ep.video_thumbnail_b || ep.category_image || ep.image || ep.thumbnail || ""),
+              })
+            );
+          }
         }
       } catch (epErr) {
         console.warn(`[OtakuTV] Failed to fetch episodes:`, epErr);

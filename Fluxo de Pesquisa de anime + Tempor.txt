@@ -1,0 +1,1393 @@
+Fluxo de Pesquisa de anime + Temporadas + Video para tocar: (API)
+
+# Pesquisa:
+
+- http://167.234.240.167:3000/search?keyword=Shield
+
+{
+  "OTAKU_V2_01": [
+    {
+      "cid": "8293",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "category_name_en": "The Rising of the Shield Hero",
+      "category_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173780-O7v1YfXg61JT.png",
+      "category_image_thumb": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173780-O7v1YfXg61JT.png",
+      "ano": "2025",
+      "status_lanc": "Em Andamento",
+      "genero": "Aventura,Ação,Fantasia",
+      "sinopse": "Naofumi Iwatani, um otaku pouco carismático que passa seus dias jogando games e mangás, de repente se vê convocado para um universo paralelo! Ele descobre que é um dos quatro heróis equipados com armas lendárias e que tem a tarefa de salvar o mundo de sua destruição profetizada. Como o Herói do Escudo, o mais fraco dos heróis, nem tudo é o que parece. Naofumi logo se vê sozinho, sem dinheiro e traído. Sem ninguém a quem recorrer e sem ter para onde correr, ele é deixado apenas com seu escudo. Agora, Naofumi deve se erguer para se tornar o lendário Shield Hero e salvar o mundo!\r\n\r\nObservação:\r\n- O primeiro episódio foi ao ar em 27 de dezembro de 2018. A transmissão regular começou em 9 de janeiro de 2019.\r\n- O primeiro episódio foi ao ar com um tempo de execução de aproximadamente 47 minutos, em vez do episódio padrão de 24 minutos de duração.",
+      "type": "anime",
+      "audios_csv": "DUB,LEG",
+      "total_temps": 8,
+      "total_eps": 126,
+      "total_views": 112998,
+      "latest_video_id": "114446",
+      "latest_temp_tid": "1778"
+    }
+  ]
+}
+
+# Temporada mais recente:
+- http://167.234.240.167:3000/single-video/{last_video_id} (114446)
+
+{
+  "OTAKU_V2_01": [
+    {
+      "cat_id": 8293,
+      "category_name": "Tate no Yuusha no Nariagari",
+      "category_name_en": "The Rising of the Shield Hero",
+      "id": 114446,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/114446.mp4",
+      "video_url_sd": "",
+      "video_title": "T04 EP. 12 - Retorno do Imperador",
+      "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/114446.mp4",
+      "video_id": "0",
+      "video_thumbnail_b": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3d1b6cb38a245329d4d1e3b7666f3d59.jpg",
+      "video_thumbnail_s": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3d1b6cb38a245329d4d1e3b7666f3d59.jpg",
+      "video_description": "O imperador desafia Raphtalia para um duelo individual!",
+      "total_views": 2667,
+      "video_ep": "EP 12 | DUB",
+      "temp_id": 1778,
+      "temp_name": "Temporada 04 | Dublado",
+      "temp_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173780-O7v1YfXg61JT.png",
+      "temp_image_title": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=600/keyart/G6W4QKX0R-title_logo-en-us",
+      "related": [
+        {
+          "rel_vid": 114339,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/114339.mp4",
+          "video_title": "T04 EP. 11 - Oráculo Miko",
+          "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/114339.mp4",
+          "video_id": "0",
+          "video_ep": "EP 11 | DUB",
+          "video_description": "Shildina aparece na antiga capital e pede um duelo entre representantes de ambos os lados.",
+          "total_views": 2688,
+          "video_thumbnail_b": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/bba786ae7a2fe6ca945636e6609e7032.jpg",
+          "video_thumbnail_s": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/bba786ae7a2fe6ca945636e6609e7032.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "rel_vid": 114225,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/114225.mp4",
+          "video_title": "T04 EP. 10 - Orações",
+          "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/114225.mp4",
+          "video_id": "0",
+          "video_ep": "EP 10 | DUB",
+          "video_description": "Raphtalia vai ao encontro da donzela do santuário do dragão de água, Shildina.",
+          "total_views": 3019,
+          "video_thumbnail_b": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2b5c24f8c1c46f71dfbfbc6a0b639843.jpg",
+          "video_thumbnail_s": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2b5c24f8c1c46f71dfbfbc6a0b639843.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "rel_vid": 114090,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/114090.mp4",
+          "video_title": "T4 EP. 9 - Zodia",
+          "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/114090.mp4",
+          "video_id": "0",
+          "video_ep": "EP 9 | DUB",
+          "video_description": "<p>O grupo de Naofumi est&aacute; mais pr&oacute;ximo da antiga capital, mas uma carta incomoda Naofumi.</p>",
+          "total_views": 3147,
+          "video_thumbnail_b": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/e1b138949d4027a9345a77b5d6de22c2.jpg",
+          "video_thumbnail_s": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/e1b138949d4027a9345a77b5d6de22c2.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "rel_vid": 113941,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "T4 EP. 8 - Orochi",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=%2Bwz7qJnttkEKWOmjFoARbQ%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dwn1UNkCuh2WAtUZeAE-9BSYQC8pfaNI1KIK0BGVYuQRrvKHXoAjoey25mskJ8ODY9XEDqmyTui1YJQsv3S3QA1UIQPjYSnZRt83T0g4QD-keJ19QAeuzApuGt7Y5DPp2Ilp2o",
+          "video_ep": "EP 8 | DUB",
+          "video_description": "<p>Depois de uma luta intensa, Naofumi e os revolucion&aacute;rios pensam no pr&oacute;ximo passo, mas o governo d&aacute; sua pr&oacute;xima cartada.</p>",
+          "total_views": 3073,
+          "video_thumbnail_b": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/ac581bc3d381bf2914e41393a7b7cfdc.jpg",
+          "video_thumbnail_s": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/ac581bc3d381bf2914e41393a7b7cfdc.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "rel_vid": 113711,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/113711.mp4",
+          "video_title": "T4 EP. 7 - Chegada em Q'ten Lo",
+          "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/113711.mp4",
+          "video_id": "0",
+          "video_ep": "EP 7 | DUB",
+          "video_description": "<p>Raphtalia recebe um pedido especial e um convite inesperado.</p>",
+          "total_views": 2898,
+          "video_thumbnail_b": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/d1b38b6323f14bf708f6b261648f7904.jpg",
+          "video_thumbnail_s": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/d1b38b6323f14bf708f6b261648f7904.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "rel_vid": 113584,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/113584.mp4",
+          "video_title": "T4 EP. 6 - Zarpando",
+          "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/113584.mp4",
+          "video_id": "0",
+          "video_ep": "EP 6 | DUB",
+          "video_description": "<p>Depois de muito acontecer, Naofumi e seu grupo se preparam rumo &agrave; Q&#39;ten Lo.</p>",
+          "total_views": 2810,
+          "video_thumbnail_b": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/6cb0624f8d1c682b29cbcf138b785635.jpg",
+          "video_thumbnail_s": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/6cb0624f8d1c682b29cbcf138b785635.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "rel_vid": 113510,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/113510.mp4",
+          "video_title": "T4 EP. 5 - Tigre Branco",
+          "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/113510.mp4",
+          "video_id": "0",
+          "video_ep": "EP 5 | DUB",
+          "video_description": "<p>Jaralis, em busca de mais poder, acaba passando dos limites.</p>",
+          "total_views": 2515,
+          "video_thumbnail_b": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/217ec4473a3fce7fd2f7880785852888.jpg",
+          "video_thumbnail_s": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/217ec4473a3fce7fd2f7880785852888.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "rel_vid": 113356,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/113356.mp4",
+          "video_title": "T4 EP. 4 - Poder Confiado",
+          "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/113356.mp4",
+          "video_id": "0",
+          "video_ep": "EP 4 | DUB",
+          "video_description": "<p>O duelo entre Jaralis e os tigres brancos come&ccedil;a e a verdade se revela.</p>",
+          "total_views": 2673,
+          "video_thumbnail_b": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/4b7dc586ab907d262783726d6227a95c.jpg",
+          "video_thumbnail_s": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/4b7dc586ab907d262783726d6227a95c.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "rel_vid": 113204,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "T4 EP. 3 - O Verdadeiro Povo",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=ff89VeP9zWdZ8XQERnXMEw%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dznL4S781cft612ngYcy3MBwx5FDlgC8Ni_31bb4RoA7ul5l-E2vHVPac8ZYyQpERN1IR1oWD32_sOvkleWRw2YZ3wGF1yuPFD3iowuSL_vY1hEjbifwBsZbGCsoUXlpOz1_7ZT",
+          "video_ep": "EP 3 | DUB",
+          "video_description": "<p>Naofumi acha uma forma de confrontar Siltvelt para poder partir, mas as coisas saem do controle.</p>",
+          "total_views": 2406,
+          "video_thumbnail_b": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/733a0bb881baf70512c8cb1afd83edb7.jpg",
+          "video_thumbnail_s": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/733a0bb881baf70512c8cb1afd83edb7.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "rel_vid": 112364,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "T4 EP. 2 - Boas-Vindas Oficiais",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=wW0ToxRmoZWaQogD0YEuDg%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dzknA79S2loi9_ZJUqYI8uNcsq0-WtxdKgY521bDV07uhqX7EZYZMjz9tMtyZqtrSEAGMQ0HyO55IjY-LCovsEJvCoz8UvfYAA4R3QGXVfvtr7GfuGyK6M80qZdHixXJtBxIUTP",
+          "video_ep": "EP 2 | DUB",
+          "video_description": "<p>Naofumi n&atilde;o se sente confort&aacute;vel com o tratamento de elite recebido em Siltvelt.</p>",
+          "total_views": 2016,
+          "video_thumbnail_b": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/b7a374941d6251dbf79c416c13b59ad1.jpg",
+          "video_thumbnail_s": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/b7a374941d6251dbf79c416c13b59ad1.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "rel_vid": 112363,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "T4 EP. 1 - Siltvelt",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=wcT7oM3iHaAfB3n2m7kfsA%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dwoZxxWu6csRx9JmWtZ0AoDezrjzv9W05dZulEN4RV0DQpS3-WKrtSWoY_6EOMLVmqBZQsKxJhUVu2aTp0j4iPSjJPj5PVdmkOmxE4W7n7F7gTqY6qkrjV7bjqa9tds2W2_xucK",
+          "video_ep": "EP 1 | DUB",
+          "video_description": "<p>Depois do ataque &agrave; Raphtalia, Naofumi se apressa rumo &agrave; Q&#39;ten Lo.</p>",
+          "total_views": 4600,
+          "video_thumbnail_b": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/1354e08a65f1a008fb4c2e8ff2b0a974.jpg",
+          "video_thumbnail_s": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=100,width=640,height=360/catalog/crunchyroll/1354e08a65f1a008fb4c2e8ff2b0a974.jpg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        }
+      ],
+      "temp": [
+        {
+          "temp_id": 1777,
+          "temp_name": "Temporada 04 | Legendado"
+        },
+        {
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "temp_id": 1636,
+          "temp_name": "Temporada 03 | Legendado"
+        },
+        {
+          "temp_id": 1637,
+          "temp_name": "Temporada 03 | Dublado"
+        },
+        {
+          "temp_id": 1634,
+          "temp_name": "Temporada 02 | Legendado"
+        },
+        {
+          "temp_id": 1635,
+          "temp_name": "Temporada 02 | Dublado"
+        },
+        {
+          "temp_id": 1632,
+          "temp_name": "Temporada 01 | Legendado"
+        },
+        {
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        }
+      ]
+    }
+  ]
+}
+
+# Outras temporadas:
+- http://167.234.240.167:3000/video-temp?temp_id={temp_id}&current_id={id}&cat_id={cat_id} (1633, 114446, 8293) - Temporada 01 | Dublado
+
+{
+  "OTAKU_V2_01": [
+    {
+      "rel_vid": 47603,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 25",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=zNSaCs9qLkcZ4EBSerfg/Q%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dzRS-k9BymLCWsGai2EG6V4usu2s5VL9VDrLfgMP-CDvkgDsxZtIakUgx0hN6HnR1Jn3uwpGU9f7Numsup-46Zqz58vW5IvkkoXl2E6QYQ_0UPD9_oLhv7JD5FZ-QLsKfmNXe4",
+      "video_ep": "EP 25 | DUB",
+      "video_description": "",
+      "total_views": 1127,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47602,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 24",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=n/%2BybcAoHwrtcDBO7ScYng%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dxUvQcxRxpWL6Bi2ftPf7XEfvM6woo27_CGKTXlU0rlQqosqR3jX36_j-e48BSx7ObP-Q8GCFmLzuGlzSH2IXidWRtwjXoqmJBudo_EH0VtIZ6WAsuDLAl0xSqqUTyM896mcyY",
+      "video_ep": "EP 24 | DUB",
+      "video_description": "",
+      "total_views": 1025,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47601,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 23",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=g5z%2BqrbPXDRkRDcsCpUPVw%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dwXzE6OvjdtOKKia0JmcVqw9ajbRSklrF68jlsb70ubek_uMDiZSnDmCS9-L-9oQVCFdwq7R5hlrJMH6bXEOVSCClKxmY6pvh-JKCVm9lqT5womqI3V4kamyJSR9LSlLMicGc8",
+      "video_ep": "EP 23 | DUB",
+      "video_description": "",
+      "total_views": 1035,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47600,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 22",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=RicdSEaPdpwTjUOIpE52tg%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dx41CnpadsfITNk28KcuKvEWMDcZqfv4AJepOjGD_TcehEmlnpcCXv5FXN6BgMqv4AECUuKa6DiSzYO79femlGhcZnJ9SgMTSNYrt0RN6HkB-i9_4HecF1C0LNZQIiDkx_vZaI",
+      "video_ep": "EP 22 | DUB",
+      "video_description": "",
+      "total_views": 1084,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47599,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 21",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=jlQ2/SiMThyAdcMMA4b//Q%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dw5osFm0zs3H6S2iXiMaYXj_HdqDQwRUw5tUiASoydnThCZpJquhvHPcRhWa8eXECAAyB0c9xDzTemO5CoDrr_YQGdig8VnfNljzNAsO40kJY8dqhQV91PC7otWR86228uFDbw",
+      "video_ep": "EP 21 | DUB",
+      "video_description": "",
+      "total_views": 1058,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47598,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 20",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=mIgjw7VTi2QRmO6xy37BVQ%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dy_VCgNel5lB05wA6mXRYKj5OyPSOFKQP28SuF1lzJrjrgAyAkpOhjjPNmwIyVyqcAOnVxbGJhv5XA2Df6IeLPJOZzYptZuxoANWvKVKuziBnNqFOYbFmCrfQLfmQ3a-NMMDLo",
+      "video_ep": "EP 20 | DUB",
+      "video_description": "",
+      "total_views": 1087,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47597,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 19",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=48wx8Ct/x66/J5tehai4lQ%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dxdhwAbsLdY2TzcQ2hWoZNBKdjyyjfepnrIVuvWm9e75l49H0d_t_sl9UZLWBZ_-tJHNtymGUwBM3Be8zWT40TGvf1EPEvsbbpB-b_zabZ_r6n7jlEoWaTOBAQn3hszC7zyHCw",
+      "video_ep": "EP 19 | DUB",
+      "video_description": "",
+      "total_views": 1026,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47596,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 18",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=geVUKpF6sxblLYxIKLliAA%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dy6PhUFjpeAH9KGSOQ4CBNbWUBot_fKnBUrAjYyfo-JsfGmT8vuSWlBulM0tp63e7LpAPxmF6Ra1LMtWqNQ6DL_QUBDORkrc3d-0dXKKQAPxbElNw61MRBM5BEBIdQHnL8fEAE",
+      "video_ep": "EP 18 | DUB",
+      "video_description": "",
+      "total_views": 1044,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47595,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 17",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=x5sKBAE91FmCCqfWR8DtKQ%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dxcfF_iaKNGzWPYefNXUUHAK5S2B8wKh0ds1PiDl0aQ-TwHtFkpNhSVIxajsnn5eZCiIPxtqHB1TCJDiY2ojeHI9A14gp5HHx0kzg5NHArDVLKQj2Qnqgq0fkN00BDtTf-FlvOH",
+      "video_ep": "EP 17 | DUB",
+      "video_description": "",
+      "total_views": 1029,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47594,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 16",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=2HnLXvbTjwY0l38%2B%2Byx5sg%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dxBmcspvToaXd0EJHLd035qMiv7bxVDZ7N7tMawDjaZyJJg4WI6kB96WoanSh08iN2RNEnbXshRz5mcl4ht9MT0KpQ5jPDCP4gLGJvyp9MvUQ9CZl-EOQUMvgznWowFqVWH5tM",
+      "video_ep": "EP 16 | DUB",
+      "video_description": "",
+      "total_views": 1053,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47593,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 15",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=18wzcgJqXPr7SDtE15QSjw%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dxlAKVELWk_B87bU8hcKEVdtAX4DzZx0GIYj6LNpVCEhQNustdejF_bfQzQHyCw4HCxmjgjJq5x_paIyqyNkgazRFW5JSKBX235AkBXfNqOd7g-f5_qQL2S549v1ODZMU53OmuS",
+      "video_ep": "EP 15 | DUB",
+      "video_description": "",
+      "total_views": 1069,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47592,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 14",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=jFyFWP0VAtHtPHOotiOfKA%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dwRmG4dYUENSuM-EvHMjVxd4Q9hGWVOqEpM_vYC67_wDwKfQ5fVpODK5ls2X2KNuZEre8ulpW7vROsOrAlEnSRLUQV8VjCMQQHpOIVkaIBrw1MtFDgx9dDgHCdkKOmHjkZWToE",
+      "video_ep": "EP 14 | DUB",
+      "video_description": "",
+      "total_views": 1073,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47591,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 13",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=Nmryemo3tpnTXpmA0IynUA%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dweTNAPFeggPYWEQnG4VoXfiPGDy82lKHkPq-vK258Cr4EhL14HkxBkBer_vAkQKGIDDqFFh3QhUxSKkkAgviDaFgngete9vOV--Yvykx4VKwMZJqmssErNpZwY0CIGi2d35uCV",
+      "video_ep": "EP 13 | DUB",
+      "video_description": "",
+      "total_views": 1047,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47590,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 12",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=ZDmkDXn88x08FuuuP2Cm0Q%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dwr1pxiT64gw947y7iIUa-2yCruwgHhAUtHF1FL7CMFVIeWDW8kAqtJeJRP_cyuZdHRSJUfrWKuOkJa7PC1nKOvFFlAflxVFOp2wFiUdpvyi2GZp4smpe4E2QHZQ0a7xAja-PN_",
+      "video_ep": "EP 12 | DUB",
+      "video_description": "",
+      "total_views": 1099,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47589,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 11",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=o7Ts/unjWB%2BCpaadjR2wxg%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dzCZBs_mUXXNciPzNOO6ojUlRKiLPnA3XoSUyyfmR19SsM7x2l-HG7beIZseHKyjCl1AmOB9n-S95pc6170700wmNAnQlIYuBajirtcd7HQscR1cCA-C3tegvIUcvmrIeqfYuU0",
+      "video_ep": "EP 11 | DUB",
+      "video_description": "",
+      "total_views": 1152,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47588,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 10",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=oEF9HKBNMFaHn69136%2Bgmw%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dyojnQMGiEXsqOt7dMpUQ8LO07YzVYfYe9EDLIKfQMtnT6c9M5u3JSecyhEkwM6ercRT7ZoIDfQctPiUC5d6m3J1Gs2xrvgJQxYaBPDnF2A10Hsf_oz9L71wpbPDBXyFsCtdScw",
+      "video_ep": "EP 10 | DUB",
+      "video_description": "",
+      "total_views": 1137,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47587,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 9",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=6w/%2BCv88G2g5gFc99zU%2BhQ%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dx_q5gCPP2rDnvHRfayM7_XoSGIrNWK-bIQlxZsm_Mx7YMbm0_kubPDARgETVlrI9BxNh9150fFw357Y1z2SPnFn_omXrzanr9pdOdayHW_01GvXaUW8XF_EU1qspQJZuDN3M__",
+      "video_ep": "EP 9 | DUB",
+      "video_description": "",
+      "total_views": 1155,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47586,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 8",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=s7uZbIV0D5Je9CpsypUgZA%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dwNWGNeBLujccWFDdxynt84jBd_H7PeOPGivROp1A0M0mv8NDyiTo7OYnArxjdRPKTNY2xx6dn_x3sjJwW2ZlB3iKPbs8tsaZ7oXpO7GXry2Omq52_p4UfAXSd3uaZyue6oRotJ",
+      "video_ep": "EP 8 | DUB",
+      "video_description": "",
+      "total_views": 1245,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47585,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 7",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=fsxUlFfC6ZVsdbN0SH6qCQ%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dyQk5PggSUBpAXHb-zUSU3ZZlRQpwxfWbxHk3WVYWaU_20Y5yfjehgQermlcPfr0mONEGm7HeAi8g3EQMJokcsDfnuHYDTBiXaXFi7BmYYPPQH828UCmEO2FKMnrNdH6M3Y6EUt",
+      "video_ep": "EP 7 | DUB",
+      "video_description": "",
+      "total_views": 1206,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47584,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 6",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=awKF8oMoL6i%2BkDcXIMU/Gw%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dyqW8kFvbK3pro_qVzFlvj40bn39Z88CYaxRkqZvV3mQ5rhYRbdakwV8tgWuzrqEgCUEeBbgIK188Gw5TnuSHIHV2-IVEOwcgcuafP4mxTi3nZlazs4Bmq6LlZ4PKGymo6G6MI",
+      "video_ep": "EP 6 | DUB",
+      "video_description": "",
+      "total_views": 1262,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47583,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 5",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=Mk9o7Tnjmb9vML6EhWZ%2Bdg%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dygenOCFH41_O8MjSEl2ufM2q2LmUizBI6F6zT_-BMsWIHlx8TS19aS5YYjHSbFTp5M4CjkiCxg8AguKkr_m3qPJv6mQsJQ8ERTz6iphXdZCnP3Vtt2zJ_rfm4lL_kmCqBPLqGK",
+      "video_ep": "EP 5 | DUB",
+      "video_description": "",
+      "total_views": 1219,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47582,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 4",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=62X%2Bbf/ulOq0Z%2BXUGGCccA%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dz2EFtalX5phXODKI6AYhl8pJbCkZtNACPQ011FEJmK-qAywJMi9QYhBMoRu-6coXTHIgUrLT4gdHgTGlHoWvlOKrLNYa9QyUr4hzWm-U-FcZuNGrd2J_nEJTz5fJtrU1OIuI2N",
+      "video_ep": "EP 4 | DUB",
+      "video_description": "",
+      "total_views": 1246,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47581,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 3",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=1NR1RZMS7NpQUEj21c5lJg%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dzf2fiCh8SbHCLxPShhEf-vUlrpQRTDUDflqza4at_EGwkffXpVc_R3Qx40hgZpLmtx8Z_7YQaPlvCcyM61_9Z9PP96emgPfmsE4GkiRlcZnqmiyuNeo1ILQA0KkrbdklJK4HC9",
+      "video_ep": "EP 3 | DUB",
+      "video_description": "",
+      "total_views": 1428,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47580,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 2",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=HhsyHf55LsDDci6WfGrjbw%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dxOVYkpc2tcLTCkC0S-uKwmVA2nEANpnRrus0mgruCMVWrZE32at2dNVZk4JACDADJhsTdf6FL5LY7DjvGwnQmWGbtUvIcqDJxQQ1zIBTF8fdh62MIIcVNXwZLqM795Hk_OcnU",
+      "video_ep": "EP 2 | DUB",
+      "video_description": "",
+      "total_views": 1392,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47579,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "",
+      "video_title": "Episódio 2",
+      "video_url": "https://otakuclass.top/vid_hd.php?token=BQTpuI3/UttD2MS2vLV%2BBw%3D%3D",
+      "video_id": "https://www.blogger.com/video.g?token=AD6v5dwFvhYov9gjCf9_nSHz7O2ZS9gVYcCplP3avUgMVY1mHOboDWmNMnhaYLrdNicDvfg662peOvEEpKkL4RAnsBGGRY0cKlujtagMOyrdUEhWVhRd42SxssAkKSIcr7Kz6HvQAbw",
+      "video_ep": "EP 2 | DUB",
+      "video_description": "",
+      "total_views": 1119,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    },
+    {
+      "rel_vid": 47578,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "https://video.wixstatic.com/video/436f78_1f61bde0551944b99f66c983466e98e0/720p/mp4/file.mp4",
+      "video_title": "Episódio 1",
+      "video_url": "",
+      "video_id": "",
+      "video_ep": "EP 1 | DUB",
+      "video_description": "",
+      "total_views": 3524,
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "category_name": "Tate no Yuusha no Nariagari",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado"
+    }
+  ]
+}
+
+# Video para player:
+- http://167.234.240.167:3000/single-video/{rel_vid} (47578) - Primeiro ep da Primeira Temporada Dublado
+
+{
+  "OTAKU_V2_01": [
+    {
+      "cat_id": 8293,
+      "category_name": "Tate no Yuusha no Nariagari",
+      "category_name_en": "The Rising of the Shield Hero",
+      "id": 47578,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "https://video.wixstatic.com/video/436f78_1f61bde0551944b99f66c983466e98e0/720p/mp4/file.mp4",
+      "video_url_sd": "",
+      "video_title": "Episódio 1",
+      "video_url": "",
+      "video_id": "",
+      "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+      "video_description": "",
+      "total_views": 3524,
+      "video_ep": "EP 1 | DUB",
+      "temp_id": 1633,
+      "temp_name": "Temporada 01 | Dublado",
+      "temp_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99263-LcazQwdlWzMy.jpg",
+      "temp_image_title": "0",
+      "related": [
+        {
+          "rel_vid": 47603,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 25",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=zNSaCs9qLkcZ4EBSerfg/Q%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dzRS-k9BymLCWsGai2EG6V4usu2s5VL9VDrLfgMP-CDvkgDsxZtIakUgx0hN6HnR1Jn3uwpGU9f7Numsup-46Zqz58vW5IvkkoXl2E6QYQ_0UPD9_oLhv7JD5FZ-QLsKfmNXe4",
+          "video_ep": "EP 25 | DUB",
+          "video_description": "",
+          "total_views": 1127,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47602,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 24",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=n/%2BybcAoHwrtcDBO7ScYng%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dxUvQcxRxpWL6Bi2ftPf7XEfvM6woo27_CGKTXlU0rlQqosqR3jX36_j-e48BSx7ObP-Q8GCFmLzuGlzSH2IXidWRtwjXoqmJBudo_EH0VtIZ6WAsuDLAl0xSqqUTyM896mcyY",
+          "video_ep": "EP 24 | DUB",
+          "video_description": "",
+          "total_views": 1025,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47601,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 23",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=g5z%2BqrbPXDRkRDcsCpUPVw%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dwXzE6OvjdtOKKia0JmcVqw9ajbRSklrF68jlsb70ubek_uMDiZSnDmCS9-L-9oQVCFdwq7R5hlrJMH6bXEOVSCClKxmY6pvh-JKCVm9lqT5womqI3V4kamyJSR9LSlLMicGc8",
+          "video_ep": "EP 23 | DUB",
+          "video_description": "",
+          "total_views": 1035,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47600,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 22",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=RicdSEaPdpwTjUOIpE52tg%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dx41CnpadsfITNk28KcuKvEWMDcZqfv4AJepOjGD_TcehEmlnpcCXv5FXN6BgMqv4AECUuKa6DiSzYO79femlGhcZnJ9SgMTSNYrt0RN6HkB-i9_4HecF1C0LNZQIiDkx_vZaI",
+          "video_ep": "EP 22 | DUB",
+          "video_description": "",
+          "total_views": 1084,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47599,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 21",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=jlQ2/SiMThyAdcMMA4b//Q%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dw5osFm0zs3H6S2iXiMaYXj_HdqDQwRUw5tUiASoydnThCZpJquhvHPcRhWa8eXECAAyB0c9xDzTemO5CoDrr_YQGdig8VnfNljzNAsO40kJY8dqhQV91PC7otWR86228uFDbw",
+          "video_ep": "EP 21 | DUB",
+          "video_description": "",
+          "total_views": 1058,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47598,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 20",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=mIgjw7VTi2QRmO6xy37BVQ%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dy_VCgNel5lB05wA6mXRYKj5OyPSOFKQP28SuF1lzJrjrgAyAkpOhjjPNmwIyVyqcAOnVxbGJhv5XA2Df6IeLPJOZzYptZuxoANWvKVKuziBnNqFOYbFmCrfQLfmQ3a-NMMDLo",
+          "video_ep": "EP 20 | DUB",
+          "video_description": "",
+          "total_views": 1087,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47597,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 19",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=48wx8Ct/x66/J5tehai4lQ%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dxdhwAbsLdY2TzcQ2hWoZNBKdjyyjfepnrIVuvWm9e75l49H0d_t_sl9UZLWBZ_-tJHNtymGUwBM3Be8zWT40TGvf1EPEvsbbpB-b_zabZ_r6n7jlEoWaTOBAQn3hszC7zyHCw",
+          "video_ep": "EP 19 | DUB",
+          "video_description": "",
+          "total_views": 1026,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47596,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 18",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=geVUKpF6sxblLYxIKLliAA%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dy6PhUFjpeAH9KGSOQ4CBNbWUBot_fKnBUrAjYyfo-JsfGmT8vuSWlBulM0tp63e7LpAPxmF6Ra1LMtWqNQ6DL_QUBDORkrc3d-0dXKKQAPxbElNw61MRBM5BEBIdQHnL8fEAE",
+          "video_ep": "EP 18 | DUB",
+          "video_description": "",
+          "total_views": 1044,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47595,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 17",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=x5sKBAE91FmCCqfWR8DtKQ%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dxcfF_iaKNGzWPYefNXUUHAK5S2B8wKh0ds1PiDl0aQ-TwHtFkpNhSVIxajsnn5eZCiIPxtqHB1TCJDiY2ojeHI9A14gp5HHx0kzg5NHArDVLKQj2Qnqgq0fkN00BDtTf-FlvOH",
+          "video_ep": "EP 17 | DUB",
+          "video_description": "",
+          "total_views": 1029,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47594,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 16",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=2HnLXvbTjwY0l38%2B%2Byx5sg%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dxBmcspvToaXd0EJHLd035qMiv7bxVDZ7N7tMawDjaZyJJg4WI6kB96WoanSh08iN2RNEnbXshRz5mcl4ht9MT0KpQ5jPDCP4gLGJvyp9MvUQ9CZl-EOQUMvgznWowFqVWH5tM",
+          "video_ep": "EP 16 | DUB",
+          "video_description": "",
+          "total_views": 1053,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47593,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 15",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=18wzcgJqXPr7SDtE15QSjw%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dxlAKVELWk_B87bU8hcKEVdtAX4DzZx0GIYj6LNpVCEhQNustdejF_bfQzQHyCw4HCxmjgjJq5x_paIyqyNkgazRFW5JSKBX235AkBXfNqOd7g-f5_qQL2S549v1ODZMU53OmuS",
+          "video_ep": "EP 15 | DUB",
+          "video_description": "",
+          "total_views": 1069,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47592,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 14",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=jFyFWP0VAtHtPHOotiOfKA%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dwRmG4dYUENSuM-EvHMjVxd4Q9hGWVOqEpM_vYC67_wDwKfQ5fVpODK5ls2X2KNuZEre8ulpW7vROsOrAlEnSRLUQV8VjCMQQHpOIVkaIBrw1MtFDgx9dDgHCdkKOmHjkZWToE",
+          "video_ep": "EP 14 | DUB",
+          "video_description": "",
+          "total_views": 1073,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47591,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 13",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=Nmryemo3tpnTXpmA0IynUA%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dweTNAPFeggPYWEQnG4VoXfiPGDy82lKHkPq-vK258Cr4EhL14HkxBkBer_vAkQKGIDDqFFh3QhUxSKkkAgviDaFgngete9vOV--Yvykx4VKwMZJqmssErNpZwY0CIGi2d35uCV",
+          "video_ep": "EP 13 | DUB",
+          "video_description": "",
+          "total_views": 1047,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47590,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 12",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=ZDmkDXn88x08FuuuP2Cm0Q%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dwr1pxiT64gw947y7iIUa-2yCruwgHhAUtHF1FL7CMFVIeWDW8kAqtJeJRP_cyuZdHRSJUfrWKuOkJa7PC1nKOvFFlAflxVFOp2wFiUdpvyi2GZp4smpe4E2QHZQ0a7xAja-PN_",
+          "video_ep": "EP 12 | DUB",
+          "video_description": "",
+          "total_views": 1099,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47589,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 11",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=o7Ts/unjWB%2BCpaadjR2wxg%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dzCZBs_mUXXNciPzNOO6ojUlRKiLPnA3XoSUyyfmR19SsM7x2l-HG7beIZseHKyjCl1AmOB9n-S95pc6170700wmNAnQlIYuBajirtcd7HQscR1cCA-C3tegvIUcvmrIeqfYuU0",
+          "video_ep": "EP 11 | DUB",
+          "video_description": "",
+          "total_views": 1152,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47588,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 10",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=oEF9HKBNMFaHn69136%2Bgmw%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dyojnQMGiEXsqOt7dMpUQ8LO07YzVYfYe9EDLIKfQMtnT6c9M5u3JSecyhEkwM6ercRT7ZoIDfQctPiUC5d6m3J1Gs2xrvgJQxYaBPDnF2A10Hsf_oz9L71wpbPDBXyFsCtdScw",
+          "video_ep": "EP 10 | DUB",
+          "video_description": "",
+          "total_views": 1137,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47587,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 9",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=6w/%2BCv88G2g5gFc99zU%2BhQ%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dx_q5gCPP2rDnvHRfayM7_XoSGIrNWK-bIQlxZsm_Mx7YMbm0_kubPDARgETVlrI9BxNh9150fFw357Y1z2SPnFn_omXrzanr9pdOdayHW_01GvXaUW8XF_EU1qspQJZuDN3M__",
+          "video_ep": "EP 9 | DUB",
+          "video_description": "",
+          "total_views": 1155,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47586,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 8",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=s7uZbIV0D5Je9CpsypUgZA%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dwNWGNeBLujccWFDdxynt84jBd_H7PeOPGivROp1A0M0mv8NDyiTo7OYnArxjdRPKTNY2xx6dn_x3sjJwW2ZlB3iKPbs8tsaZ7oXpO7GXry2Omq52_p4UfAXSd3uaZyue6oRotJ",
+          "video_ep": "EP 8 | DUB",
+          "video_description": "",
+          "total_views": 1245,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47585,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 7",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=fsxUlFfC6ZVsdbN0SH6qCQ%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dyQk5PggSUBpAXHb-zUSU3ZZlRQpwxfWbxHk3WVYWaU_20Y5yfjehgQermlcPfr0mONEGm7HeAi8g3EQMJokcsDfnuHYDTBiXaXFi7BmYYPPQH828UCmEO2FKMnrNdH6M3Y6EUt",
+          "video_ep": "EP 7 | DUB",
+          "video_description": "",
+          "total_views": 1206,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47584,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 6",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=awKF8oMoL6i%2BkDcXIMU/Gw%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dyqW8kFvbK3pro_qVzFlvj40bn39Z88CYaxRkqZvV3mQ5rhYRbdakwV8tgWuzrqEgCUEeBbgIK188Gw5TnuSHIHV2-IVEOwcgcuafP4mxTi3nZlazs4Bmq6LlZ4PKGymo6G6MI",
+          "video_ep": "EP 6 | DUB",
+          "video_description": "",
+          "total_views": 1262,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47583,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 5",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=Mk9o7Tnjmb9vML6EhWZ%2Bdg%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dygenOCFH41_O8MjSEl2ufM2q2LmUizBI6F6zT_-BMsWIHlx8TS19aS5YYjHSbFTp5M4CjkiCxg8AguKkr_m3qPJv6mQsJQ8ERTz6iphXdZCnP3Vtt2zJ_rfm4lL_kmCqBPLqGK",
+          "video_ep": "EP 5 | DUB",
+          "video_description": "",
+          "total_views": 1219,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47582,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 4",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=62X%2Bbf/ulOq0Z%2BXUGGCccA%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dz2EFtalX5phXODKI6AYhl8pJbCkZtNACPQ011FEJmK-qAywJMi9QYhBMoRu-6coXTHIgUrLT4gdHgTGlHoWvlOKrLNYa9QyUr4hzWm-U-FcZuNGrd2J_nEJTz5fJtrU1OIuI2N",
+          "video_ep": "EP 4 | DUB",
+          "video_description": "",
+          "total_views": 1246,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47581,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 3",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=1NR1RZMS7NpQUEj21c5lJg%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dzf2fiCh8SbHCLxPShhEf-vUlrpQRTDUDflqza4at_EGwkffXpVc_R3Qx40hgZpLmtx8Z_7YQaPlvCcyM61_9Z9PP96emgPfmsE4GkiRlcZnqmiyuNeo1ILQA0KkrbdklJK4HC9",
+          "video_ep": "EP 3 | DUB",
+          "video_description": "",
+          "total_views": 1428,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47579,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 2",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=BQTpuI3/UttD2MS2vLV%2BBw%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dwFvhYov9gjCf9_nSHz7O2ZS9gVYcCplP3avUgMVY1mHOboDWmNMnhaYLrdNicDvfg662peOvEEpKkL4RAnsBGGRY0cKlujtagMOyrdUEhWVhRd42SxssAkKSIcr7Kz6HvQAbw",
+          "video_ep": "EP 2 | DUB",
+          "video_description": "",
+          "total_views": 1119,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        },
+        {
+          "rel_vid": 47580,
+          "video_type": "server_url",
+          "video_type_fhd": "server_url",
+          "video_url_fhd": "",
+          "video_title": "Episódio 2",
+          "video_url": "https://otakuclass.top/vid_hd.php?token=HhsyHf55LsDDci6WfGrjbw%3D%3D",
+          "video_id": "https://www.blogger.com/video.g?token=AD6v5dxOVYkpc2tcLTCkC0S-uKwmVA2nEANpnRrus0mgruCMVWrZE32at2dNVZk4JACDADJhsTdf6FL5LY7DjvGwnQmWGbtUvIcqDJxQQ1zIBTF8fdh62MIIcVNXwZLqM795Hk_OcnU",
+          "video_ep": "EP 2 | DUB",
+          "video_description": "",
+          "total_views": 1392,
+          "video_thumbnail_b": "https://stg.otakuclass.top/images/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "video_thumbnail_s": "https://stg.otakuclass.top/images/thumbs/807159_TatenoYuushanoNariagariDublado.jpeg",
+          "category_name": "Tate no Yuusha no Nariagari",
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        }
+      ],
+      "temp": [
+        {
+          "temp_id": 1777,
+          "temp_name": "Temporada 04 | Legendado"
+        },
+        {
+          "temp_id": 1778,
+          "temp_name": "Temporada 04 | Dublado"
+        },
+        {
+          "temp_id": 1636,
+          "temp_name": "Temporada 03 | Legendado"
+        },
+        {
+          "temp_id": 1637,
+          "temp_name": "Temporada 03 | Dublado"
+        },
+        {
+          "temp_id": 1634,
+          "temp_name": "Temporada 02 | Legendado"
+        },
+        {
+          "temp_id": 1635,
+          "temp_name": "Temporada 02 | Dublado"
+        },
+        {
+          "temp_id": 1632,
+          "temp_name": "Temporada 01 | Legendado"
+        },
+        {
+          "temp_id": 1633,
+          "temp_name": "Temporada 01 | Dublado"
+        }
+      ]
+    }
+  ]
+}
+
+
+Link do vídeo: 
+"video_url_fhd": "https://video.wixstatic.com/video/436f78_1f61bde0551944b99f66c983466e98e0/720p/mp4/file.mp4"
+
+Nome do Episódio:
+"video_title": "Episódio 1"
+
+Thumbnail do Video: 
+"temp_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99263-LcazQwdlWzMy.jpg"
+
+Nomes da série (anime):
+"category_name": "Tate no Yuusha no Nariagari",
+"category_name_en": "The Rising of the Shield Hero",
+
+Demais episódios da Temporada:
+"related": [{...}]
+
+Demais temporadas:
+"temp": [{...}]
+
+
+
+
+
+---
+
+
+Player de Video:
+
+Chamada atual:
+- http://localhost:8080/watch/218152?catId=%2235029%22&tempId=%227243%22
+
+Espera o link do Episódio 01 da Temporada 02
+
+Chamada real na api:
+- http://167.234.240.167:3000/video-temp?temp_id=7243&current_id=218152&cat_id=35029
+
+Retorno da api:
+
+{
+  "OTAKU_V2_01": [
+    {
+      "rel_vid": 218708,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/218708.mp4",
+      "video_title": "T02 EP. 06 - A Primeira Flor",
+      "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/218708.mp4",
+      "video_id": "0",
+      "video_ep": "EP 6 | DUB",
+      "video_description": "Por fim, Will põe os pés na torre onde Elfaria o espera. Sua alegria ao ver a cidade no primeiro andar dura pouco. O Bloom começa e Sion, Colette, Lihanna e Wignall, que foram todos recrutados enquanto estudantes, são recebidos em suas respectivas facções. Will e os outros descobrem a verdade: sem uma facção, passarão a vida como engrenagens na máquina que sustenta a torre.",
+      "total_views": 1183,
+      "video_thumbnail_b": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/05150d154417ccd17e47963124fb5996.png",
+      "video_thumbnail_s": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/05150d154417ccd17e47963124fb5996.png",
+      "category_name": "Tsue to Tsurugi no Wistoria",
+      "temp_id": 7243,
+      "temp_name": "Temporada 02 | Dublado"
+    },
+    {
+      "rel_vid": 218596,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/218596.mp4",
+      "video_title": "T02 EP. 05 - O dia da partida",
+      "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/218596.mp4",
+      "video_id": "0",
+      "video_ep": "EP 5 | DUB",
+      "video_description": "Graças ao poder combinado da varinha e da espada, Will derrota o Devander com sua espada mágica, Wis. Apesar das inúmeras vítimas e do fato de o líder do ataque permanecer desconhecido, a capital começa a se recuperar. E assim, chega o dia da formatura da academia de magia. Depois de perder Rosty e ver seu caminho para a torre bloqueado, Will assiste à leitura dos nomes daqueles que ascenderão à torre...",
+      "total_views": 2557,
+      "video_thumbnail_b": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b31fd7a10a90de9c63debb91cec45b35.png",
+      "video_thumbnail_s": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b31fd7a10a90de9c63debb91cec45b35.png",
+      "category_name": "Tsue to Tsurugi no Wistoria",
+      "temp_id": 7243,
+      "temp_name": "Temporada 02 | Dublado"
+    },
+    {
+      "rel_vid": 218473,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/218473.mp4",
+      "video_title": "T02 EP. 04 - E assim começa a história",
+      "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/218473.mp4",
+      "video_id": "0",
+      "video_ep": "EP 4 | DUB",
+      "video_description": "Guided by Finn, Will awakens the power sleeping within him. Enveloped in a silvery light, he slashes through the monsters in the capital, targeting the Devander. He faces the mage-slayer-wielding monster alone. The other students are moved as they watch Will, someone they scorned, do battle. With their cheers at his back, Will presses the fight, but the Devander’s attack breaks his sword in two.",
+      "total_views": 3355,
+      "video_thumbnail_b": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/99743f3dc53d9e9ced59969e037d6490.png",
+      "video_thumbnail_s": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/99743f3dc53d9e9ced59969e037d6490.png",
+      "category_name": "Tsue to Tsurugi no Wistoria",
+      "temp_id": 7243,
+      "temp_name": "Temporada 02 | Dublado"
+    },
+    {
+      "rel_vid": 218379,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/218255.mp4",
+      "video_title": "T02 EP. 03 - Um Único Feitiço",
+      "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/218255.mp4",
+      "video_id": "0",
+      "video_ep": "EP 3 | DUB",
+      "video_description": "A situação da capital é caótica e desesperadora e Will quase perde sua motivação de lutar.",
+      "total_views": 3962,
+      "video_thumbnail_b": "https://image.tmdb.org/t/p/w780/sfBgO2EmJgmhVN21Qb83WFUvQtJ.jpg",
+      "video_thumbnail_s": "https://image.tmdb.org/t/p/w780/sfBgO2EmJgmhVN21Qb83WFUvQtJ.jpg",
+      "category_name": "Tsue to Tsurugi no Wistoria",
+      "temp_id": 7243,
+      "temp_name": "Temporada 02 | Dublado"
+    },
+    {
+      "rel_vid": 218255,
+      "video_type": "server_url",
+      "video_type_fhd": "server_url",
+      "video_url_fhd": "https://nsrv.classotaku.app/file/classtaku/00_lanc/218379.mp4",
+      "video_title": "T02 EP. 02 - Banquete do Inferno",
+      "video_url": "https://nsrv.classotaku.app/file/classtaku/00_lanc/218379.mp4",
+      "video_id": "0",
+      "video_ep": "EP 2 | DUB",
+      "video_description": "Monstros invadem Rigarden e surge um Devander, forçando Will ao limite.",
+      "total_views": 4139,
+      "video_thumbnail_b": "https://image.tmdb.org/t/p/w780/agHni8bXYgbfgubrY8CZOunuNNP.jpg",
+      "video_thumbnail_s": "https://image.tmdb.org/t/p/w780/agHni8bXYgbfgubrY8CZOunuNNP.jpg",
+      "category_name": "Tsue to Tsurugi no Wistoria",
+      "temp_id": 7243,
+      "temp_name": "Temporada 02 | Dublado"
+    }
+  ]
+}
+
+O player tem que encontrar onde o "temp_id" está localizado para poder pegar a url do vídeo em "video_url_fhd" ou em "video_url" para poder reproduzir corretamente
+
+
+---
+
+Aniskip
+
+Só funciona com MAL-ID com a requisição GET 
+Ex: curl -X 'GET' \
+  'https://api.aniskip.com/v2/skip-times/121/1?types=op&types=ed&episodeLength=1440' \
+  -H 'accept: application/json'
+
+Retorno:
+
+{
+  "found": true,
+  "results": [
+    {
+      "interval": {
+        "startTime": 5.712,
+        "endTime": 95.712
+      },
+      "skipType": "op",
+      "skipId": "6e62c473-e3c8-4679-90a2-782938300af5",
+      "episodeLength": 1434.04
+    },
+    {
+      "interval": {
+        "startTime": 1314,
+        "endTime": 1422
+      },
+      "skipType": "ed",
+      "skipId": "c81101fb-3fae-45de-a7ec-169e8c1b2a02",
+      "episodeLength": 1434
+    }
+  ],
+  "message": "Successfully found skip times",
+  "statusCode": 200
+}
+
+Ou seja, temos que fazer uma req para a API do Jikan para pegarmos o MAL_ID com base no nome do anime e com isso fazer a req para o Aniskip para ter o retorno dos Skiptimes
