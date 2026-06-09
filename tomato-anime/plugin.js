@@ -61,11 +61,21 @@
     return new MultimediaItem({
       title: anime.category_name || anime.video_title || anime.title || anime.name || anime.anime_name || "Sem título",
       url: ids,
-      posterUrl: cleanImageUrl(anime.video_thumbnail_b || anime.category_image || anime.cover_url || anime.poster_url || anime.image || anime.thumbnail || anime.anime_cover_url || ""),
+      posterUrl: cleanImageUrl(
+        anime.video_thumbnail_b ||
+        anime.category_image ||
+        anime.cover_url ||
+        anime.poster_url ||
+        anime.image ||
+        anime.thumbnail ||
+        anime.anime_cover_url ||
+        anime.temp_image ||
+        ""
+      ),
       type: "anime",
       year: isNaN(numYear) ? undefined : numYear,
       score: isNaN(numScore) ? undefined : numScore,
-      status: anime.status_temp === "Concluído" || anime.status_lanc === "Concluído" ? "completed" : (anime.status || undefined),
+      status: (anime.status_temp === "Concluído" || anime.status_lanc === "Concluído") ? "completed" : (anime.status || undefined),
       description: anime.video_description || anime.sinopse || anime.synopsis || anime.description || anime.anime_description || undefined,
     });
   }
@@ -134,8 +144,8 @@
         
         let items = [];
         for (const s of gStrips) {
-          // Ignore the global strips returned with the genre payload
-          if (s.id !== "latest_animes" && s.id !== "popular_weekly") {
+          // Only accept the strictly creative genre strips and ignore ALL globals
+          if (s.id && s.id.startsWith("creative_")) {
             if (s.items && Array.isArray(s.items)) {
               items = items.concat(s.items);
             }

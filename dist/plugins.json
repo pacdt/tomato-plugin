@@ -2,13 +2,13 @@
   {
     "packageName": "com.otakutv.animeplugin",
     "name": "OtakuTV Anime",
-    "version": 8,
+    "version": 9,
     "author": "mgser",
     "description": "Anime streaming via OtakuTV Proxy API — feed, search, details & HLS streams.",
     "baseUrl": "http://167.234.240.167:3000",
     "type": "anime",
     "language": "pt",
     "icon": "https://raw.githubusercontent.com/pacdt/tomato-plugin/main/icon.png",
-    "url": "https://raw.githubusercontent.com/pacdt/tomato-plugin/main/dist/com.otakutv.animeplugin.sky?v=8"
+    "url": "https://raw.githubusercontent.com/pacdt/tomato-plugin/main/dist/com.otakutv.animeplugin.sky?v=9"
   }
 ]
