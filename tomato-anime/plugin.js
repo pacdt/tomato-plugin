@@ -131,7 +131,7 @@
 
       // 2. Fetch all genres to append as individual strips
       const genrePromises = GENEROS.map(g =>
-        apiGet(`/home-strips?type=anime&generos=${encodeURIComponent(g)}`)
+        apiGet(`/home-strips?type=anime&generos=${encodeURIComponent(g)}&_t=${Date.now()}_${Math.random().toString(36).substring(7)}`)
           .then(res => ({ genre: g, res }))
           .catch(() => ({ genre: g, res: {} }))
       );
@@ -143,9 +143,11 @@
         const gStrips = d.strips || [];
         
         let items = [];
+        const expectedStripId = "creative_" + genre.toLowerCase();
+        
         for (const s of gStrips) {
-          // Only accept the strictly creative genre strips and ignore ALL globals
-          if (s.id && s.id.startsWith("creative_")) {
+          // Strictly match the strip ID for this specific genre to prevent cross-contamination
+          if (s.id && s.id.toLowerCase() === expectedStripId) {
             if (s.items && Array.isArray(s.items)) {
               items = items.concat(s.items);
             }
